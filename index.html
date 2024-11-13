@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var a;
+        var b;
+        var c;
+        var d;
+        var e;
+        var result=0;
+        var percentage=0;
+
+        function calculate ()
+        {
+            a=parseInt(form1.txtnum1.value);
+            b=parseInt(form1.txtnum2.value);
+            c=parseInt(form1.txtnum3.value);
+            d=parseInt(form1.txtnum4.value);
+            e=parseInt(form1.txtnum5.value);
+            result=a+b+c+d+e;
+
+            percentage = result/5;
+
+            document.write("Total:"+"<b>"+result+"<b>"+"<br>");
+                document.write("Percentage:"+"<b>"+percentage+"<b>"+"<br>");
+                    document.write("Grade:")
+if(percentage>=91)
+{
+    document.write("A")
+    
+}
+else if(percentage>=81)
+    {
+        document.write("B")
+    }
+    else  if(percentage>=71)
+        {
+            document.write("C")
+        }
+        else  if(percentage>=61)
+            {
+                document.write("D")
+            }
+            else  if(percentage>=51)
+                {
+                    document.write("E")
+                }
+                else  if(percentage<=50)
+                    {
+                        document.write("Fail")
+                    } 
+
+        }
+
+
+
+
+    </script>
+</head>
+<body>
+    <h1>Student marks calculation</h1>
+    <h2>Name:  sana</h2>
+    <h2>s/No:  1000143</h2>
+    <form name="form1">
+        <b>English 1:</b><input type="textbox" name="txtnum1"><br>
+        <b>Maths 2:</b><input type="textbox" name="txtnum2"><br>
+        <b>computer 3:</b><input type="textbox" name="txtnum3"><br>
+        <b>physics 4:</b><input type="textbox" name="txtnum4"><br>
+        <b>biology 5:</b><input type="textbox" name="txtnum5"><br>
+        <input type="button" value="calculate" onclick="calculate()">
+    </form>
+</body>
+</html>
+
